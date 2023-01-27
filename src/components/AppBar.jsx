@@ -12,15 +12,17 @@ const styles = StyleSheet.create({
         height: theme.appBar.height,
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'center',
-
+        alignItems: 'center'
     },
 });
 
 const AppBar = () => {
-    return <View style={styles.container}>
-        <AppBarTab />
-    </View>;
+    return (
+        <View style={styles.container}>
+            <AppBarTab to={"Repositories"} link={"/"} />
+            <AppBarTab to={"Sign in"} link={"/signin"} />
+        </View>
+    );
 };
 
 export default AppBar;
