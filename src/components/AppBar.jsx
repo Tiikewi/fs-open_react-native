@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
 
     },
-    // ...
 });
 
 const AppBar = () => {
